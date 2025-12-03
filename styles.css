@@ -1,0 +1,16 @@
+/* Simple responsive styles */
+:root{--max-width:1000px;--accent:#0b74de;--muted:#666}
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6;color:#222;margin:0;background:#f7f7fb}
+.container{max-width:var(--max-width);margin:0 auto;padding:20px}
+.site-header{background:white;border-bottom:1px solid #e6e6ee;padding:28px 0}
+.site-header h1{margin:0;font-size:28px}
+.site-header .tag{color:var(--muted);margin:6px 0 0}
+.breadcrumb{margin-top:10px;color:var(--muted)}
+.breadcrumb a{color:var(--accent);text-decoration:none}
+main{padding:28px 0}
+.pagination{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:12px}
+.pagination a{padding:6px 10px;border-radius:6px;text-decoration:none;border:1px solid #e1e4f0;background:white;color:#0a2540}
+.pagination a[aria-current="page"]{font-weight:700;background:#e9f2ff}
+.site-footer{padding:20px 0;text-align:center;color:var(--muted);font-size:14px}
+@media (max-width:600px){.container{padding:12px}.site-header h1{font-size:20px}}
